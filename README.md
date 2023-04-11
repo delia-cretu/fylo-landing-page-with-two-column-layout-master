@@ -13,8 +13,6 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/delia-cretu/fylo-landing-page-with-two-column-layout-master
+- Live Site URL: https://delia-cretu.github.io/fylo-landing-page-with-two-column-layout-master/
 
 ## My process
 
