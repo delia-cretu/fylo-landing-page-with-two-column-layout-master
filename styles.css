@@ -1,25 +1,30 @@
 /* HEADER */
 
-/* MAIN */
+/* MAIN - Flex layout */
 
-#section1,
-#section2 {
+.first-section,
+.second-section,
+.third-section {
   display: flex;
   flex-direction: row;
-  width: 95%;
-  margin: 30px auto;
+  width: 100%;
+  height: 500px;
+  margin: 30px 0;
+  padding: 0 50px 0 75px;
 }
 
-.section-text {
+.section-content {
   border: 2px solid red;
   width: 50%;
-  height: 500px;
+  height: 100%;
+  margin: auto 0;
+  color: hsl(243, 87%, 12%);
 }
 
 .section-image {
   border: 2px solid red;
   width: 50%;
-  height: 500px;
+  height: 100%;
   position: relative;
 }
 
@@ -32,32 +37,31 @@
 }
 
 @media (max-width: 800px) {
-  #section1,
-  #section2 {
+  .first-section,
+  .second-section {
     flex-direction: column-reverse;
     width: 90%;
+  }
+  .first-section {
     height: 800px;
   }
-  #section1 {
-    height: 500px;
-  }
-  #section1 .section-text {
+  .first-section .section-content {
     width: 100%;
     height: 50%;
     text-align: center;
   }
-  #section1 .section-image {
+  .first-section .section-image {
     width: 100%;
     height: 50%;
   }
-  #section2 {
+  .second-section {
     height: 900px;
   }
-  #section2 .section-text {
+  .second-section .section-content {
     width: 100%;
     height: 70%;
   }
-  #section2 .section-image {
+  .second-section .section-image {
     width: 100%;
     height: 30%;
   }
@@ -67,7 +71,62 @@
   }
 }
 
-/* FOOTER */ /* ATTRIBUTION */
+/* MAIN - Styles */
+
+.first-section,
+.second-section {
+  background-color: #ffffff;
+  color: hsl(243, 87%, 12%);
+}
+
+.first-section h2,
+.second-section h2,
+.third-section h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.first-section p,
+.second-section p,
+.third-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 20px 40px 20px 0;
+}
+
+.third-section {
+  background-color: hsl(238, 22%, 44%);
+  color: #ffffff;
+}
+
+.third-section .button {
+  background-color: hsl(224, 93%, 58%);
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  height: 40px;
+  width: 165px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.third-section .email-box {
+  background-color: #ffffff;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.third-section .button:hover,
+.third-section .button:visited {
+  background-color: hsl(224, 100%, 75%);
+}
+
+/* FOOTER */
 .footer-media svg {
   height: 30px;
   width: 30px;
